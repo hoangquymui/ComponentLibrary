@@ -1,12 +1,13 @@
 import type { ComponentType } from "react";
-import { Sparkles, Box, CheckSquare, LayoutGrid } from "lucide-react";
+import { Sparkles, Box, CheckSquare, LayoutGrid, MoreHorizontal } from "lucide-react";
 import type { LucideProps } from "lucide-react";
 import { BUTTON_COMPONENTS } from "@/data/buttonsData";
 import { CARD_COMPONENTS } from "@/data/cardsData";
 import { FORM_COMPONENTS } from "@/data/formsData";
 import { NAVIGATION_COMPONENTS } from "@/data/navigationComponentsData";
+import { OTHERS_COMPONENTS } from "@/data/othersData";
 
-export type TabCategory = "buttons" | "cards" | "forms" | "navigation";
+export type TabCategory = "buttons" | "cards" | "forms" | "navigation" | "others";
 
 export interface MenuItem {
   id: TabCategory;
@@ -56,6 +57,16 @@ export const MENU_ITEMS: MenuItem[] = [
     icon: LayoutGrid,
     get count() {
       return NAVIGATION_COMPONENTS.length;
+    },
+  },
+  {
+    id: "others",
+    path: "/others",
+    label: "Others & Utilities",
+    description: "Các component tiện ích đặc biệt: Progress Indicators, Spinners & hơn thế nữa.",
+    icon: MoreHorizontal,
+    get count() {
+      return OTHERS_COMPONENTS.length;
     },
   },
 ];

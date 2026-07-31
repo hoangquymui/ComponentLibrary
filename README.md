@@ -12,7 +12,7 @@
 
 ## ✨ Tính năng nổi bật
 
-- 🧩 **33+ UI Components** được phân loại rõ ràng theo 4 danh mục
+- 🧩 **37+ UI Components** được phân loại rõ ràng theo 5 danh mục
 - 🌗 **Dark / Light Mode** — chuyển đổi mượt mà toàn bộ ứng dụng
 - 📋 **AI Prompt** — mỗi component có sẵn prompt chi tiết để dùng với AI
 - 📱 **Responsive Design** — tương thích mọi kích thước màn hình
@@ -75,6 +75,15 @@
 | Breadcrumb Path Navigation | Thanh phân cấp đường dẫn với icon |
 | Page Pagination Navigation | Thanh phân trang với nút trước/sau |
 | Mobile Bottom Navigation | Thanh điều hướng đáy màn hình di động 4 tab |
+
+### ⚙️ Others & Utilities — 4 components
+
+| Component | Mô tả |
+|---|---|
+| Indeterminate Spinner | Con quay tải xoay khi thời gian xử lý là ẩn số (không có %) |
+| Determinate Progress Ring | Vòng tròn SVG điền dần đến % hoàn thành |
+| Linear Progress Bar | Thanh ngang dùng khi có đủ không gian hiển thị track |
+| Custom Accessible Progress Bar | Thanh tùy chỉnh với `role="progressbar"` + `aria-valuenow` chuẩn WCAG |
 
 ---
 

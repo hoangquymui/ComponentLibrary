@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 
 export interface ComponentDetailItem {
   id: string;
-  category: "buttons" | "cards" | "forms" | "navigation";
+  category: "buttons" | "cards" | "forms" | "navigation" | "others";
   title: string;
   description: string;
   component: ReactNode;
