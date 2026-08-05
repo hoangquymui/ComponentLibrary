@@ -6,6 +6,7 @@ import { CardsPage } from "@/Pages/Cards/CardsPage";
 import { FormsPage } from "@/Pages/Forms/FormsPage";
 import { NavigationPage } from "@/Pages/Navigation/NavigationPage";
 import { OthersPage } from "@/Pages/Others/OthersPage";
+import { ChatPage } from "@/Pages/Chat/ChatPage";
 import { ComponentDetailPage } from "@/Pages/ComponentDetail/ComponentDetailPage";
 import { theme } from "@/theme";
 
@@ -34,14 +35,15 @@ export default function App() {
             className={`p-6 md:p-8 gap-3 ${theme.colors.bg.secondary} ${theme.colors.border.primary} border rounded-2xl flex items-center justify-center shadow-sm dark:shadow-none ${theme.transitions.colors}`}
           >
             <Routes>
-              <Route path="/" element={<Navigate to="/buttons" replace />} />
+              <Route path="/" element={<Navigate to="/chat" replace />} />
+              <Route path="/chat" element={<ChatPage />} />
               <Route path="/buttons" element={<ButtonsPage />} />
               <Route path="/cards" element={<CardsPage />} />
               <Route path="/forms" element={<FormsPage />} />
               <Route path="/navigation" element={<NavigationPage />} />
               <Route path="/others" element={<OthersPage />} />
               <Route path="/component/:id" element={<ComponentDetailPage />} />
-              <Route path="*" element={<Navigate to="/buttons" replace />} />
+              <Route path="*" element={<Navigate to="/chat" replace />} />
             </Routes>
           </div>
 

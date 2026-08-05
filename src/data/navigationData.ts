@@ -7,7 +7,7 @@ import { FORM_COMPONENTS } from "@/data/formsData";
 import { NAVIGATION_COMPONENTS } from "@/data/navigationComponentsData";
 import { OTHERS_COMPONENTS } from "@/data/othersData";
 
-export type TabCategory = "buttons" | "cards" | "forms" | "navigation" | "others";
+export type TabCategory = "chat" | "buttons" | "cards" | "forms" | "navigation" | "others";
 
 export interface MenuItem {
   id: TabCategory;
@@ -19,6 +19,14 @@ export interface MenuItem {
 }
 
 export const MENU_ITEMS: MenuItem[] = [
+  {
+    id: "chat",
+    path: "/chat",
+    label: "AI Chat Assistant",
+    description: "Giao diện trò chuyện AI trực quan đồng bộ theo theme ứng dụng.",
+    icon: Sparkles,
+    count: 1,
+  },
   {
     id: "buttons",
     path: "/buttons",
@@ -70,3 +78,4 @@ export const MENU_ITEMS: MenuItem[] = [
     },
   },
 ];
+
